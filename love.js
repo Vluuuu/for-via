@@ -17,7 +17,7 @@ style.innerHTML = `
   .heart {
     width: 20px;
     height: 20px;
-    background: pink;
+    background: #1b6ca8; /* biru utama */
     position: fixed;
     top: -20px;
     left: 0;
@@ -31,7 +31,7 @@ style.innerHTML = `
     content: '';
     width: 20px;
     height: 20px;
-    background: pink;
+    background: #1b6ca8; /* biru juga */
     position: absolute;
     border-radius: 50%;
   }
