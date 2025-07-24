@@ -133,3 +133,64 @@ button:hover {
   justify-items: center;
   padding-top: 1rem;
 }
+
+#flower-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+}
+
+#flower-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+}
+
+.flower {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  animation: fall 5s linear forwards;
+  transform-origin: center;
+}
+
+.petals {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.petal {
+  width: 20px;
+  height: 20px;
+  background: radial-gradient(circle, pink 30%, deeppink);
+  border-radius: 50%;
+  position: absolute;
+  opacity: 0.9;
+}
+
+.petal:nth-child(1) { top: -10px; left: 0; }
+.petal:nth-child(2) { top: 5px; left: -12px; }
+.petal:nth-child(3) { top: 5px; left: 12px; }
+.petal:nth-child(4) { top: 15px; left: -5px; }
+.petal:nth-child(5) { top: 15px; left: 5px; }
+
+@keyframes fall {
+  0% {
+    transform: translateY(0) rotate(0deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(100vh) rotate(360deg);
+    opacity: 0;
+  }
+}
+

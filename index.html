@@ -28,7 +28,10 @@
         <button onclick="showPage('message')">💌 Pesan Spesial</button>
         <button onclick="showPage('us')">📸 Us</button>
         <button onclick="showPage('video')">🎥 Our Video</button>
+        <button onclick="startFlowerRain()">🌸 Flower</button>
+
       </div>
+
     </div>
   </section>
 
@@ -93,6 +96,8 @@ Makasih udah terima dan sabar sama aku sayang.
   <img id="modal-img" />
 </div>
 
+<!--Bunga -->
+<div id="flower-container"></div>
 
 
 <!-- Our Video -->
@@ -124,7 +129,6 @@ Makasih udah terima dan sabar sama aku sayang.
     <button onclick="showPage('home')">🏠 Kembali</button>
   </div>
 </section>
-
 
   <!-- Script -->
   <audio id="bg-music" src="music.mp3" loop></audio>
@@ -168,6 +172,36 @@ Makasih udah terima dan sabar sama aku sayang.
     document.getElementById("image-modal").style.display = "none";
   }
 </script>
+
+<script>
+function startFlowerRain() {
+  const container = document.getElementById('flower-container');
+  for (let i = 0; i < 25; i++) {
+    const flower = document.createElement('div');
+    flower.classList.add('flower');
+    flower.style.left = Math.random() * 100 + 'vw';
+    flower.style.animationDuration = (Math.random() * 2 + 3) + 's';
+    flower.style.top = '-40px';
+
+    const petals = document.createElement('div');
+    petals.classList.add('petals');
+
+    for (let j = 0; j < 5; j++) {
+      const petal = document.createElement('div');
+      petal.classList.add('petal');
+      petals.appendChild(petal);
+    }
+
+    flower.appendChild(petals);
+    container.appendChild(flower);
+
+    setTimeout(() => {
+      flower.remove();
+    }, 5000);
+  }
+}
+</script>
+
 
   <script src="love.js"></script>
 
