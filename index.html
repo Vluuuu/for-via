@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Happy Mensive 5 Months BUBUB</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Love Animation -->
+  <div id="love-container"></div>
+
+<!-- Musik -->
+<audio id="bg-music" src="audio/iris.mp3" loop></audio>
+<button id="toggle-music">🔊 Music</button>
+
+
+  <!-- Pochaco Image -->
+  <img src="img/pochaco.png" alt="Pochaco" class="pochaco" />
+
+  <!-- Halaman Utama -->
+  <section id="home" class="section active">
+    <div class="container">
+      <h1>Happy Mensive<br>5 Months BUBUB 💕</h1>
+      <img src="img/couple.jpg" alt="Us Together" class="photo" />
+      <div class="button-group">
+        <button onclick="showPage('message')">💌 Pesan Spesial</button>
+        <button onclick="showPage('us')">📸 Us</button>
+        <button onclick="showPage('video')">🎥 Our Video</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pesan Spesial -->
+  <section id="message" class="section">
+    <div class="container">
+      <h2>💌 Pesan Spesial</h2>
+      <p>Hi viiii bubub aku,
+
+First i want to say that I LOVE YOU SO MUCH AND MORE THAN YOU KNOW.
+YEYYY kita udah jalanin hubungan 10 bulan, 5 bulan kelas 10, 5 bulan kelas 12 dan akan lanjut terus aamiin.
+
+Aku inget awal aku deketin kamu, aku kasih kamu link yang isinya pesan juga kaya gini, kurang lebih kaya gini hehe.
+
+Aku bahagia banget bisa jalanin hubungan sama kamu sampai saat ini. Aku tau aku bukan orang yang sempurna tapi aku ga menyerah untuk berjuang jadi yang terbaik buat kamu.
+
+Aku harap kita dan hubungan kita bisa selalu lebih baik dan berkembang ke depannya, terutama semoga kamu sehat selalu dan dilancarkan rezekinya.
+
+Suatu keberuntungan aku bisa bertemu kamu vii.
+Aku bersyukur aku bisa punya cewe kaya kamu yang lucu, cantik, pinter, gemes, pengertian, dan kelebihan lainnya.
+
+Makasih udah terima dan sabar sama aku sayang.
+**I LOVE YOU TO THE MOON 💖</p>
+      <button onclick="showPage('home')">🏠 Kembali</button>
+    </div>
+  </section>
+
+<!-- Us -->
+<section id="us" class="section">
+  <div class="container">
+    <h2>📸 Us</h2>
+    <div class="gallery">
+      <!-- Ganti ini dengan 20 gambar statis -->
+      <img src="img/us1.jpg" alt="Us 1" class="photo-thumb" onclick="openModal(this.src)" />
+      <img src="img/us2.jpg" alt="Us 2" class="photo-thumb" onclick="openModal(this.src)" />
+      <img src="img/us3.jpg" alt="Us 3" class="photo-thumb" onclick="openModal(this.src)" />
+      <img src="img/us4.jpg" alt="Us 4" class="photo-thumb" onclick="openModal(this.src)" />
+      <img src="img/us5.jpg" alt="Us 5" class="photo-thumb" onclick="openModal(this.src)" />
+      <img src="img/us6.jpg" alt="Us 6" class="photo-thumb" onclick="openModal(this.src)" />
+      <img src="img/us7.jpg" alt="Us 7" class="photo-thumb" onclick="openModal(this.src)" />
+      <img src="img/us8.jpg" alt="Us 8" class="photo-thumb" onclick="openModal(this.src)" />
+      <img src="img/us9.jpg" alt="Us 9" class="photo-thumb" onclick="openModal(this.src)" />
+      <img src="img/us10.jpg" alt="Us 10" class="photo-thumb" onclick="openModal(this.src)" />
+      <img src="img/us11.jpg" alt="Us 11" class="photo-thumb" onclick="openModal(this.src)" />
+      <img src="img/us12.jpg" alt="Us 12" class="photo-thumb" onclick="openModal(this.src)" />
+      <img src="img/us13.jpg" alt="Us 13" class="photo-thumb" onclick="openModal(this.src)" />
+      <img src="img/us14.jpg" alt="Us 14" class="photo-thumb" onclick="openModal(this.src)" />
+      <img src="img/us15.jpg" alt="Us 15" class="photo-thumb" onclick="openModal(this.src)" />
+      <img src="img/us16.jpg" alt="Us 16" class="photo-thumb" onclick="openModal(this.src)" />
+      <img src="img/us17.jpg" alt="Us 17" class="photo-thumb" onclick="openModal(this.src)" />
+      <img src="img/us18.jpg" alt="Us 18" class="photo-thumb" onclick="openModal(this.src)" />
+      <img src="img/us19.jpg" alt="Us 19" class="photo-thumb" onclick="openModal(this.src)" />
+      <img src="img/us20.jpg" alt="Us 20" class="photo-thumb" onclick="openModal(this.src)" />
+    </div>
+    <button onclick="showPage('home')">🏠 Kembali</button>
+  </div>
+</section>
+
+
+<!-- Modal Preview -->
+<div id="image-modal" class="modal" onclick="closeModal()">
+  <img id="modal-img" />
+</div>
+
+
+
+<!-- Our Video -->
+<section id="video" class="section">
+  <div class="container">
+    <h2>🎥 Our Video</h2>
+    <div class="video-gallery">
+      <video controls width="300">
+        <source src="video/vid1.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+      <video controls width="300">
+        <source src="video/vid2.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+      <video controls width="300">
+        <source src="video/vid3.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+      <video controls width="300">
+        <source src="video/vid4.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+    </div>
+    <button onclick="showPage('home')">🏠 Kembali</button>
+  </div>
+</section>
+
+
+  <!-- Script -->
+  <audio id="bg-music" src="music.mp3" loop></audio>
+
+<script>
+  const bgMusic = document.getElementById('bg-music');
+  let started = false;
+
+  // Mulai musik saat halaman pertama diklik
+  document.body.addEventListener('click', () => {
+    if (!started) {
+      bgMusic.play().catch(e => console.log("Playback prevented:", e));
+      started = true;
+    }
+  });
+
+  // Fungsi tombol toggle musik (jika kamu ingin pakai)
+  function toggleMusic() {
+    if (bgMusic.paused) {
+      bgMusic.play();
+    } else {
+      bgMusic.pause();
+    }
+  }
+
+  function showPage(id) {
+    document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
+    document.getElementById(id).classList.add('active');
+  }
+</script>
+
+  <script>
+  function openModal(src) {
+    const modal = document.getElementById("image-modal");
+    const modalImg = document.getElementById("modal-img");
+    modalImg.src = src;
+    modal.style.display = "flex";
+  }
+
+  function closeModal() {
+    document.getElementById("image-modal").style.display = "none";
+  }
+</script>
+
+  <script src="love.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<body>
+<audio id="bg-music" loop autoplay>
+  <source src="music/mylove.mp3" type="audio/mp3">
+</audio>
+
+<script>
+  const music = document.getElementById('bg-music');
+
+  window.addEventListener('message', (e) => {
+    if (e.data.type === 'play-music') {
+      music.play();
+    } else if (e.data.type === 'toggle-music') {
+      if (music.paused) music.play();
+      else music.pause();
+    }
+  });
+</script>
+</body>
+</html>
